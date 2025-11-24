@@ -5,11 +5,11 @@ import { Target, Eye, Award } from 'lucide-react';
 export const About: React.FC = () => {
   return (
     <>
-      <section id="about" className="py-24 bg-slate-950 overflow-hidden">
+      <section id="about" className="py-24 bg-black overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div className="mb-12 lg:mb-0 relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-nova-500 to-purple-600 rounded-2xl opacity-30 blur-lg"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-nova-600 to-purple-900 rounded-2xl opacity-20 blur-xl"></div>
               <img 
                 src="https://picsum.photos/800/600" 
                 alt="Team working" 
@@ -17,7 +17,7 @@ export const About: React.FC = () => {
               />
             </div>
             <div>
-              <h2 className="text-base font-semibold text-nova-400 tracking-wide uppercase">About Us</h2>
+              <h2 className="text-base font-semibold text-nova-500 tracking-wide uppercase">About Us</h2>
               <p className="mt-2 text-3xl font-tech font-bold text-white sm:text-4xl mb-6">
                 We Build The Digital Future
               </p>
@@ -31,7 +31,7 @@ export const About: React.FC = () => {
               <div className="flex items-center gap-4">
                  <div className="flex -space-x-4">
                     {[1,2,3,4].map(i => (
-                        <div key={i} className="w-12 h-12 rounded-full border-2 border-slate-950 bg-slate-800 overflow-hidden">
+                        <div key={i} className="w-12 h-12 rounded-full border-2 border-black bg-zinc-800 overflow-hidden">
                             <img src={`https://picsum.photos/100/100?random=${i}`} alt="Avatar" />
                         </div>
                     ))}
@@ -45,14 +45,14 @@ export const About: React.FC = () => {
         </div>
       </section>
 
-      <section id="mission" className="py-24 bg-slate-900 border-y border-white/5">
+      <section id="mission" className="py-24 bg-[#050505] border-y border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-tech font-bold text-white">Mission & Vision</h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-slate-950 p-8 rounded-2xl border border-white/5 shadow-xl hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-zinc-900/30 p-8 rounded-2xl border border-white/5 shadow-xl hover:-translate-y-2 transition-transform duration-300">
               <div className="w-14 h-14 bg-nova-500/10 rounded-xl flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-nova-400" />
               </div>
@@ -62,7 +62,7 @@ export const About: React.FC = () => {
               </p>
             </div>
 
-            <div className="bg-slate-950 p-8 rounded-2xl border border-white/5 shadow-xl hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-zinc-900/30 p-8 rounded-2xl border border-white/5 shadow-xl hover:-translate-y-2 transition-transform duration-300">
               <div className="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center mb-6">
                 <Eye className="w-8 h-8 text-purple-400" />
               </div>

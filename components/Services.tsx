@@ -3,10 +3,10 @@ import { SERVICES } from '../constants';
 
 export const Services: React.FC = () => {
   return (
-    <section id="services" className="py-24 bg-slate-900 relative">
+    <section id="services" className="py-24 bg-[#050505] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-nova-400 tracking-wide uppercase">What We Do</h2>
+          <h2 className="text-base font-semibold text-nova-500 tracking-wide uppercase">What We Do</h2>
           <p className="mt-2 text-3xl leading-8 font-tech font-bold tracking-tight text-white sm:text-4xl">
             Our Services
           </p>
@@ -19,9 +19,9 @@ export const Services: React.FC = () => {
           {SERVICES.map((service) => (
             <div 
               key={service.id}
-              className="group relative p-8 bg-slate-950/50 border border-white/5 rounded-2xl hover:bg-slate-800/50 transition-all duration-300 hover:border-nova-500/30 overflow-hidden"
+              className="group relative p-8 bg-zinc-900/30 border border-white/5 rounded-2xl hover:bg-zinc-900/60 transition-all duration-300 hover:border-nova-500/30 overflow-hidden"
             >
-              <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
                 <service.icon size={120} className="text-white" />
               </div>
               
@@ -39,7 +39,7 @@ export const Services: React.FC = () => {
                 </p>
               </div>
               
-              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-nova-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-nova-600 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </div>
           ))}
         </div>
