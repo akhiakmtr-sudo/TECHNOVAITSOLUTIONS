@@ -1,10 +1,9 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { QueryResponse } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
 export const analyzeUserQuery = async (queryText: string): Promise<QueryResponse> => {
   try {
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
     const model = "gemini-2.5-flash";
     const prompt = `
       You are an expert IT consultant for "TechNova IT Solutions". 
