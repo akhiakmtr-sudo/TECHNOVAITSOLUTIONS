@@ -1,6 +1,6 @@
 import React from 'react';
 import { COMPANY_INFO } from '../constants';
-import { Target, Eye, Award } from 'lucide-react';
+import { Target, Eye } from 'lucide-react';
 
 export const About: React.FC = () => {
   return (
