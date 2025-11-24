@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Cpu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
 
 export const Navbar: React.FC = () => {
@@ -19,9 +19,11 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo(0,0)}>
-            <div className="bg-nova-600 p-2 rounded-lg">
-              <Cpu className="h-6 w-6 text-white" />
-            </div>
+            <img 
+              src="https://collection.cloudinary.com/dsamz0zji/419f31cb55947655f726c5fe5d6fc55f" 
+              alt="TechNova Logo" 
+              className="h-10 w-10 rounded-lg object-cover"
+            />
             <span className="font-tech text-2xl font-bold tracking-wider text-white">
               Tech<span className="text-nova-500">Nova</span>
             </span>

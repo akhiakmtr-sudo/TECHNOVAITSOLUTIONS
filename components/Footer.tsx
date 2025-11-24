@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cpu, Facebook, Twitter, Linkedin, Instagram, ArrowUp } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Instagram, ArrowUp } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
 
 export const Footer: React.FC = () => {
@@ -10,9 +10,11 @@ export const Footer: React.FC = () => {
           
           <div>
             <div className="flex items-center gap-2 mb-6">
-               <div className="bg-nova-600 p-1.5 rounded-lg">
-                <Cpu className="h-5 w-5 text-white" />
-               </div>
+               <img 
+                 src="https://collection.cloudinary.com/dsamz0zji/419f31cb55947655f726c5fe5d6fc55f" 
+                 alt="TechNova Logo" 
+                 className="h-8 w-8 rounded-lg object-cover"
+               />
                <span className="font-tech text-xl font-bold text-white">
                 Tech<span className="text-nova-500">Nova</span>
                </span>
